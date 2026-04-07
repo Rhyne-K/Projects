@@ -1,0 +1,319 @@
+/* FONT REFERENCES
+.saira-stencil-one-regular {
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.saira-stencil-<uniquifier> {
+  font-family: "Saira Stencil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/
+
+* {
+  /* CSS HEX */
+  --background-card: #332e4d;
+  --background: #020203;
+  --accentColor: #b9102c;
+  --accentColor2: #832232;
+  --accentColor3: #38a338;
+  --accentColor4: #c8b050;
+  --accentColor5: #ea86cd;
+  --accentColor6: #ffffff;
+  --accentColor7: #939393;
+  --accentColor8: #354faf;
+  font-family: "Saira Stencil", sans-serif;
+  color: var(--accentColor6);
+  background-color: var(--background);
+}
+
+header {
+  background-color: var(--accentColor2);
+  font-size: 60px;
+  color: var(--accentColor6);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  font-family: "Saira Stencil One", sans-serif;
+}
+
+header>img {
+  background-color: var(--accentColor2);
+}
+
+p {
+  font-size: 20px;
+  padding-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Saira Stencil", sans-serif;
+  border: 2px solid #832232;
+  border-radius: 12px;
+}
+
+.disclaimer {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+
+h2 {
+  color: var(--accentColor);
+  font-family: "Saira Stencil One", sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+
+.do-list {
+  list-style-image: url('Assets/Check.svg');
+  margin-left: auto;
+}
+
+.main-do-list {
+  padding: 30px;
+}
+
+
+.dont-list {
+  list-style-image: url('Assets/X.svg');
+  margin-right: auto;
+}
+
+.gearchecktitle {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.whatyouget {
+  color: var(--accentColor3);
+  font-size: 30px;
+}
+
+.whatyoudontget {
+  color: var(--accentColor);
+  font-size: 30px;
+}
+
+
+.checklist-description {
+  font-size: 16px;
+  border: none;
+  background-color: var(--background-card);
+}
+
+.getlist>li {
+  border: 3px solid #020203;
+  border-left: 10px solid #38a338;
+  background-color: var(--background-card);
+  border-radius: 12px;
+  list-style: none;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.getlist>li>img {
+  background-color: var(--background-card);
+}
+
+.dontgetlist {
+  border: 3px solid #020203;
+  border-radius: 12px;
+  list-style: none;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dontgetlist>li {
+  border: 3px solid #020203;
+  border-left: 10px solid #b9102c;
+  background-color: var(--background-card);
+  border-radius: 12px;
+  list-style: none;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.dontgetlist>li>img {
+  background-color: var(--background-card);
+}
+
+/* ALIGNT STANDARD GEAR CHECKLIST  */
+.list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+  width: 100%
+}
+
+.getlist,
+.dontgetlist {
+  width: 100%;
+  padding: 0;
+}
+
+.getlist>li,
+.dontgetlist>li {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/*NEBULA IMAGE*/
+.nebula-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.nebula-image img {
+  max-width: 100%;
+  height: 400px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.nebula-image figcaption {
+  font-size: 18px;
+}
+
+
+/*STYLE LINKS TO BRANCH HTML FILES*/
+.links {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: var(--accentColor4);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attribute {
+  border: none;
+  font-size: 12px;
+  text-align: center;
+}
+
+.redshirt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 400px;
+}
+
+
+.mortalityRates {
+  list-style: none;
+  font-size: 20px;
+}
+
+.CD {
+  font-size: 20px;
+  color: var(--accentColor7);
+}
+
+.security {
+  color: var(--accentColor);
+}
+
+.science {
+  color: var(--accentColor8);
+}
+
+.command {
+  color: var(--accentColor4);
+}
+
+.engineering {
+  color: var(--accentColor);
+}
+
+.medical {
+  color: var(--accentColor8);
+}
+
+.keyFindings {
+  border: 3px solid #832232;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.mDescription {
+  padding: 10px;
+  font-size: 28px;
+}
+
+.totalC {
+  border: none;
+}
+
+footer {
+  font-size: 10px;
+}
+
+.shirtDescription {
+  border: none;
+  text-align: center;
+}
+
+
+.handyNotesDescription {
+  border: none;
+  font-size: 12px;
+}
+
+
+.hallOfShame {
+  color: var(--accentColor7);
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.hallOfShame>ul {
+  margin-bottom: 20px;
+}
+
+h3>ul>li {
+  list-style: none;
+
+}
+
+.end-quote {
+  padding: 20px;
+  font-size: 30px;
+  color: var(--accentColor4);
+}
+
+.top-quote {
+  padding: 20px;
+  font-size: 30px;
+  color: var(--accentColor4);
+}
+
+.death-cards {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
